@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Cinematic Male Portrait — Dark Studio",
+    "tool": "Midjourney",
+    "category": "Portrait",
+    "date": "2026",
+    "prompt": "Close-up cinematic portrait of a South Asian man in his 40s, strong directional side-lighting from the left, deep shadow on right side of face, wearing a dark navy suit, contemplative expression, 85mm lens, shallow depth of field, dark studio background, fine grain film texture, deep navy shadows with gold rim light, magazine editorial quality, premium print finish, cinematic depth. Not AI-looking."
+  },
+  {
+    "id": 2,
+    "title": "AI Brain — Editorial Concept",
+    "tool": "Gemini",
+    "category": "Editorial",
+    "date": "2026",
+    "prompt": "Editorial concept illustration of a human brain composed entirely of glowing circuit lines and data nodes, floating against a deep black background, electric blue and gold accent colors, dramatic spotlight from above, fine crosshatching texture overlay, hyper-detailed, cinematic depth of field, magazine cover quality, premium editorial illustration style. Not AI-looking."
+  },
+  {
+    "id": 3,
+    "title": "Dark Luxury Office — Creative Director",
+    "tool": "Midjourney",
+    "category": "Lifestyle",
+    "date": "2026",
+    "prompt": "Wide cinematic shot of a dark luxury creative office, deep navy walls, gold desk lamp casting warm pool of light, large monitor with design work visible, leather chair, bokeh city lights through floor-to-ceiling window at night, 35mm lens, anamorphic flare, editorial interior photography style, deep shadows with gold and blue highlights, premium architectural digest quality. Not AI-looking."
+  },
+  {
+    "id": 4,
+    "title": "Abstract AI Identity — Fractured Self",
+    "tool": "Flux",
+    "category": "Abstract",
+    "date": "2026",
+    "prompt": "Abstract surrealist portrait of a human figure dissolving into cascading lines of code and light particles, half-human half-digital, dramatic high-contrast lighting, electric blue and gold color palette against deep black void, 50mm center composition, rule of thirds, fine grain texture, cinematic mood, philosophical and contemplative tone, museum-worthy surrealist artwork. Not AI-looking."
+  },
+  {
+    "id": 5,
+    "title": "Typography Poster — Manifesto Style",
+    "tool": "Ideogram",
+    "category": "Typography",
+    "date": "2026",
+    "prompt": "Editorial typographic poster design, bold serif headline reading I Direct Machines To Imagine in large confident white type on deep black background, gold accent underline on key phrase, minimal layout with generous negative space, slight paper texture overlay, premium print quality, magazine manifesto aesthetic, Bauhaus-inspired editorial structure. Not AI-looking."
+  },
+  {
+    "id": 6,
+    "title": "Karachi Cityscape — Cinematic Night",
+    "tool": "Midjourney",
+    "category": "Cityscape",
+    "date": "2026",
+    "prompt": "Cinematic wide-angle night shot of Karachi skyline from a rooftop, golden streetlights reflecting on wet roads below, distant sea horizon, dramatic storm clouds with silver lining, anamorphic lens flare, 24mm ultra-wide, long exposure light trails from traffic, deep navy sky with electric blue cloud highlights, editorial travel photography quality, National Geographic cinematic grade. Not AI-looking."
+  },
+  {
+    "id": 7,
+    "title": "Prompt Engineer — Character Study",
+    "tool": "Gemini",
+    "category": "Portrait",
+    "date": "2026",
+    "prompt": "Character study portrait of a creative technologist, South Asian male, 40s, seated at a glowing terminal in a dark room, face illuminated by blue monitor light, surrounded by floating holographic text fragments, glasses reflecting code, contemplative and focused expression, 85mm portrait lens, cinematic depth of field, editorial storytelling composition, TIME magazine cover quality. Not AI-looking."
+  },
+  {
+    "id": 8,
+    "title": "Ink and Data — Editorial Illustration",
+    "tool": "Recraft",
+    "category": "Illustration",
+    "date": "2026",
+    "prompt": "Premium editorial illustration combining traditional ink drawing and digital data visualization, pen-and-ink crosshatching style depicting a human hand reaching toward a stream of golden data particles, archival ink texture, graphite shading, watercolor wash in deep navy and gold, white paper background, fine art illustration quality, New Yorker magazine editorial standard. Not AI-looking."
+  }
+]
