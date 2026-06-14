@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — LaiqVerse Prompt Library</title>
+  <meta name="google-site-verification" content="42XFdtBmr1w8i4mYrviWS84GvITiDbBbDNY6EU3aD0s"/>
+  <meta name="description" content="Laiq Ahmed Qureshi — Creative Director, Imagineer, founder of LaiqVerse. Based in Karachi, Pakistan."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--black:#0A0A0A;--dark:#111111;--card:#161616;--border:#222222;--orange:#E84A00;--orange-dim:#a33300;--orange-glow:rgba(232,74,0,0.12);--white:#FFFFFF;--muted:#888888;--tag-bg:#1a1a1a}
+    html{scroll-behavior:smooth}
+    body{background:var(--black);color:var(--white);font-family:'Inter',sans-serif;min-height:100vh}
+    header{border-bottom:1px solid var(--border);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:76px;position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(16px);z-index:100}
+    .logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+    .logo img{height:42px;width:auto;display:block}
+    .logo-text{display:flex;flex-direction:column;gap:2px}
+    .logo-name{font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--white)}
+    .logo-name span{color:var(--orange)}
+    .logo-tagline{font-size:10px;color:var(--muted);letter-spacing:0.06em;font-style:italic}
+    nav{display:flex;align-items:center;gap:4px}
+    nav a{font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:8px 14px;transition:color 0.2s}
+    nav a:hover,nav a.active{color:var(--orange)}
+    .hero{padding:80px 48px 64px;border-bottom:1px solid var(--border);position:relative;overflow:hidden;background:linear-gradient(180deg,#0d0d0d 0%,var(--black) 100%)}
+    .hero::before{content:'';position:absolute;top:-80px;right:-80px;width:560px;height:560px;background:radial-gradient(circle,var(--orange-glow) 0%,transparent 65%);pointer-events:none}
+    .hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--orange);margin-bottom:20px}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,72px);font-weight:900;line-height:0.95;color:var(--white);max-width:700px;margin-bottom:24px}
+    .hero h1 em{font-style:italic;color:var(--orange)}
+    .about-body{max-width:860px;margin:0 auto;padding:64px 48px 80px}
+    .about-grid{display:grid;grid-template-columns:1fr 2fr;gap:48px;align-items:start;margin-bottom:64px}
+    .about-image{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;border:1px solid var(--border)}
+    .about-image-placeholder{width:100%;aspect-ratio:3/4;background:linear-gradient(135deg,#111 0%,#1a1a1a 100%);display:flex;align-items:center;justify-content:center;border:1px solid var(--border)}
+    .about-image-placeholder img{height:64px;width:auto;opacity:0.2}
+    .about-right{display:flex;flex-direction:column;gap:28px}
+    .about-label{font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--orange);margin-bottom:8px}
+    .about-name{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);font-weight:900;line-height:1.1;color:var(--white);margin-bottom:4px}
+    .about-title{font-size:14px;color:var(--muted);letter-spacing:0.06em;margin-bottom:20px}
+    .about-bio p{font-size:15px;color:#bbb;line-height:1.85;margin-bottom:16px}
+    .about-bio p:last-child{margin-bottom:0}
+    .about-bio strong{color:var(--white)}
+    .divider{border:none;border-top:1px solid var(--border);margin:48px 0}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-bottom:48px}
+    .stat{background:var(--card);padding:28px;text-align:center}
+    .stat-number{font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:var(--orange);display:block;margin-bottom:6px}
+    .stat-label{font-size:11px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase}
+    .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border)}
+    .skill{background:var(--card);padding:20px 24px}
+    .skill-title{font-size:12px;font-weight:700;color:var(--white);letter-spacing:0.06em;margin-bottom:6px}
+    .skill-desc{font-size:12px;color:var(--muted);line-height:1.6}
+    footer{border-top:1px solid var(--border);padding:28px 48px;display:flex;align-items:center;justify-content:space-between;background:#0d0d0d}
+    .footer-left{display:flex;align-items:center;gap:14px}
+    .footer-logo{height:28px;width:auto;opacity:0.6}
+    .footer-brand{font-size:12px;color:var(--muted)}
+    .footer-brand strong{color:var(--orange)}
+    .footer-tagline{font-size:11px;color:var(--muted);font-style:italic}
+    @media(max-width:768px){header,footer{padding-left:20px;padding-right:20px}.about-body{padding:40px 20px 60px}.about-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr}.footer-tagline{display:none}nav a{padding:8px 8px}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">
+      <img src="images/logo.png" alt="LaiqVerse Logo"/>
+      <div class="logo-text">
+        <div class="logo-name">Laiq<span>Verse</span> Prompts</div>
+        <div class="logo-tagline">I direct machines to imagine.</div>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">Library</a>
+      <a href="about.html" class="active">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-eyebrow">About the Imagineer</div>
+    <h1>Creative Director.<br/><em>Imagineer.</em><br/>AI Explorer.</h1>
+  </section>
+
+  <div class="about-body">
+    <div class="about-grid">
+      <div class="about-image-placeholder">
+        <img src="images/logo.png" alt="LaiqVerse"/>
+      </div>
+      <div class="about-right">
+        <div>
+          <div class="about-label">The Person</div>
+          <div class="about-name">Laiq Ahmed Qureshi</div>
+          <div class="about-title">Creative Director &amp; Digital Strategist · Karachi, Pakistan</div>
+        </div>
+        <div class="about-bio">
+          <p>With <strong>over 20 years of experience</strong> in advertising, branding, and digital strategy, Laiq Ahmed Qureshi sits at an unusual intersection — part Creative Director, part AI experimenter, part observer of how machines are reshaping imagination itself.</p>
+          <p>An alumnus of the <strong>National College of Arts (NCA), Lahore</strong>, Laiq brings a trained visual sensibility to everything he does — from campaign strategy to AI-generated editorial art. His work spans clients including Prestige Communication and Gravity, with a career rooted in the belief that emotion and information are never opposites.</p>
+          <p><strong>LaiqVerse</strong> is his personal brand and ongoing experiment — a space where AI, graphic design, and visual arts collide. The tagline says it plainly: <em>"I direct machines to imagine."</em> He prefers the title Imagineer.</p>
+          <p>He writes about AI not as a technologist, but as a creative professional watching the shift happen in real time — cutting through hype to find what actually changes, what stays human, and what that means for the people who make things for a living.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <div class="stats-grid">
+      <div class="stat">
+        <span class="stat-number">20+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">NCA</span>
+        <span class="stat-label">Lahore Alumni</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Prompts Imagined</span>
+      </div>
+    </div>
+
+    <div class="about-label">What He Does</div>
+    <div class="skills-grid">
+      <div class="skill">
+        <div class="skill-title">Creative Direction</div>
+        <div class="skill-desc">Brand strategy, campaign ideation, visual systems, advertising — 20+ years of making things that work and look like they mean it.</div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">AI Image Generation</div>
+        <div class="skill-desc">Prompt engineering across Midjourney, Gemini, Flux, Ideogram, Recraft — crafting cinematic, editorial, dark luxury visuals.</div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">Digital Strategy</div>
+        <div class="skill-desc">Social media strategy, content systems, multi-platform presence — building audiences with signal over noise.</div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">Writing &amp; Thinking</div>
+        <div class="skill-desc">Publishing on LaiqVerse about AI, creativity, and human behaviour — sharp, observational, more philosophy than tutorial.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <img class="footer-logo" src="images/logo.png" alt="LaiqVerse"/>
+      <div class="footer-brand"><strong>LaiqVerse</strong> Prompt Library &middot; Karachi, Pakistan</div>
+    </div>
+    <div class="footer-tagline">"I direct machines to imagine."</div>
+  </footer>
+</body>
+</html>

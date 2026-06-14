@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — LaiqVerse Prompt Library</title>
+  <meta name="google-site-verification" content="42XFdtBmr1w8i4mYrviWS84GvITiDbBbDNY6EU3aD0s"/>
+  <meta name="description" content="Latest posts from LaiqVerse — AI, creativity, and human behaviour by Laiq Ahmed Qureshi."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--black:#0A0A0A;--dark:#111111;--card:#161616;--border:#222222;--orange:#E84A00;--orange-dim:#a33300;--orange-glow:rgba(232,74,0,0.12);--white:#FFFFFF;--muted:#888888;--tag-bg:#1a1a1a}
+    html{scroll-behavior:smooth}
+    body{background:var(--black);color:var(--white);font-family:'Inter',sans-serif;min-height:100vh}
+    header{border-bottom:1px solid var(--border);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:76px;position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(16px);z-index:100}
+    .logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+    .logo img{height:42px;width:auto;display:block}
+    .logo-text{display:flex;flex-direction:column;gap:2px}
+    .logo-name{font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--white)}
+    .logo-name span{color:var(--orange)}
+    .logo-tagline{font-size:10px;color:var(--muted);letter-spacing:0.06em;font-style:italic}
+    nav{display:flex;align-items:center;gap:4px}
+    nav a{font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:8px 14px;transition:color 0.2s}
+    nav a:hover,nav a.active{color:var(--orange)}
+    .hero{padding:80px 48px 64px;border-bottom:1px solid var(--border);position:relative;overflow:hidden;background:linear-gradient(180deg,#0d0d0d 0%,var(--black) 100%)}
+    .hero::before{content:'';position:absolute;top:-80px;right:-80px;width:560px;height:560px;background:radial-gradient(circle,var(--orange-glow) 0%,transparent 65%);pointer-events:none}
+    .hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--orange);margin-bottom:20px}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,72px);font-weight:900;line-height:0.95;color:var(--white);max-width:700px;margin-bottom:24px}
+    .hero h1 em{font-style:italic;color:var(--orange)}
+    .hero-sub{font-size:15px;color:var(--muted);max-width:460px;line-height:1.75}
+    .blog-body{padding:48px 48px 80px}
+    .blog-label{font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--orange);margin-bottom:24px}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1px;background:var(--border);margin-bottom:48px}
+    .blog-card{background:var(--card);padding:32px;display:flex;flex-direction:column;gap:14px;text-decoration:none;transition:background 0.2s}
+    .blog-card:hover{background:#1c1c1c}
+    .blog-card:hover .blog-title{color:var(--orange)}
+    .blog-meta{font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase}
+    .blog-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;line-height:1.3;color:var(--white);transition:color 0.2s}
+    .blog-excerpt{font-size:13px;color:#888;line-height:1.75;flex:1}
+    .blog-read{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-top:8px}
+    .blog-cta{background:var(--card);border:1px solid var(--border);padding:40px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px}
+    .blog-cta-text{font-size:15px;color:var(--muted);line-height:1.7;max-width:480px}
+    .blog-cta-btn{background:var(--orange);border:none;color:var(--white);padding:14px 32px;font-size:12px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;display:inline-block;transition:opacity 0.2s}
+    .blog-cta-btn:hover{opacity:0.85}
+    footer{border-top:1px solid var(--border);padding:28px 48px;display:flex;align-items:center;justify-content:space-between;background:#0d0d0d}
+    .footer-left{display:flex;align-items:center;gap:14px}
+    .footer-logo{height:28px;width:auto;opacity:0.6}
+    .footer-brand{font-size:12px;color:var(--muted)}
+    .footer-brand strong{color:var(--orange)}
+    .footer-tagline{font-size:11px;color:var(--muted);font-style:italic}
+    @media(max-width:768px){header,footer{padding-left:20px;padding-right:20px}.blog-body{padding:40px 20px 60px}.blog-grid{grid-template-columns:1fr}.footer-tagline{display:none}nav a{padding:8px 8px}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">
+      <img src="images/logo.png" alt="LaiqVerse Logo"/>
+      <div class="logo-text">
+        <div class="logo-name">Laiq<span>Verse</span> Prompts</div>
+        <div class="logo-tagline">I direct machines to imagine.</div>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">Library</a>
+      <a href="about.html">About</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-eyebrow">LaiqVerse Blog</div>
+    <h1>Signal.<br/>Not<br/><em>Noise.</em></h1>
+    <p class="hero-sub">Honest observations about AI, creativity, and human behaviour — from someone watching the shift happen in real time.</p>
+  </section>
+
+  <div class="blog-body">
+    <div class="blog-label">Latest Posts</div>
+    <div class="blog-grid">
+
+      <a class="blog-card" href="https://laiqverse11.wordpress.com/2026/05/25/ai-taste-new-superpower/" target="_blank">
+        <div class="blog-meta">May 25, 2026</div>
+        <div class="blog-title">Everyone Has AI Now. Why Taste Is Becoming the New Superpower</div>
+        <div class="blog-excerpt">AI made creation faster, cheaper, and accessible to everyone. But when everyone has the same tools, what becomes valuable? Taste. Here's why creative judgment is becoming the new superpower.</div>
+        <div class="blog-read">Read Post &rarr;</div>
+      </a>
+
+      <a class="blog-card" href="https://laiqverse11.wordpress.com/2026/05/23/google-gemini-omni-spark-ask-youtube-ai-creators/" target="_blank">
+        <div class="blog-meta">May 23, 2026</div>
+        <div class="blog-title">Google Just Changed Creativity: Gemini Omni, Spark & Ask YouTube</div>
+        <div class="blog-excerpt">Google just made AI feel more creative, personal, and practical. From Gemini Omni's next-generation media creation to Ask YouTube's conversational search — what it means for content creators.</div>
+        <div class="blog-read">Read Post &rarr;</div>
+      </a>
+
+      <a class="blog-card" href="https://laiqverse11.wordpress.com/2026/05/21/end-of-skills-what-to-learn-in-the-age-of-ai/" target="_blank">
+        <div class="blog-meta">May 21, 2026</div>
+        <div class="blog-title">Beyond Execution: Rediscovering Human Value in the Age of AI</div>
+        <div class="blog-excerpt">If AI can do most things faster and cheaper than a human, what exactly are you supposed to spend the next five years learning? It's time to move past the hype and focus on what actually matters.</div>
+        <div class="blog-read">Read Post &rarr;</div>
+      </a>
+
+      <a class="blog-card" href="https://laiqverse11.wordpress.com/2026/05/17/ai-agents-2026-digital-coworker/" target="_blank">
+        <div class="blog-meta">May 17, 2026</div>
+        <div class="blog-title">AI Agents in 2026: Are They Really Your New Digital Coworker?</div>
+        <div class="blog-excerpt">Everyone's calling AI agents the future of work. I'm not so sure it's that simple. Here's an honest breakdown of what AI agents can actually do in 2026 — and where the hype ends.</div>
+        <div class="blog-read">Read Post &rarr;</div>
+      </a>
+
+      <a class="blog-card" href="https://laiqverse11.wordpress.com/2026/05/16/prompt-engineering-for-creators/" target="_blank">
+        <div class="blog-meta">May 16, 2026</div>
+        <div class="blog-title">Prompt Engineering for Creators: How to Actually Get What You Want from AI</div>
+        <div class="blog-excerpt">You're not bad at AI. You're just asking it the wrong things. A practical breakdown of prompt engineering for content creators — no jargon, no frameworks, just what actually changes the output.</div>
+        <div class="blog-read">Read Post &rarr;</div>
+      </a>
+
+      <a class="blog-card" href="https://laiqverse11.wordpress.com/2026/05/14/ai-and-human-identity/" target="_blank">
+        <div class="blog-meta">May 14, 2026</div>
+        <div class="blog-title">Who Are You When AI Knows You Better Than You Do?</div>
+        <div class="blog-excerpt">We've spent centuries trying to understand ourselves. Now, for the first time, a machine can finish that sentence for us. This piece explores what happens to human identity when AI knows your patterns better than you do.</div>
+        <div class="blog-read">Read Post &rarr;</div>
+      </a>
+
+    </div>
+
+    <div class="blog-cta">
+      <div class="blog-cta-text">All posts live on LaiqVerse — a space where design thinking meets the AI era. Sharp, observational writing about creativity, technology, and what it means to make things in 2026.</div>
+      <a class="blog-cta-btn" href="https://laiqverse11.wordpress.com" target="_blank">Visit LaiqVerse Blog &rarr;</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <img class="footer-logo" src="images/logo.png" alt="LaiqVerse"/>
+      <div class="footer-brand"><strong>LaiqVerse</strong> Prompt Library &middot; Karachi, Pakistan</div>
+    </div>
+    <div class="footer-tagline">"I direct machines to imagine."</div>
+  </footer>
+</body>
+</html>

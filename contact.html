@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — LaiqVerse Prompt Library</title>
+  <meta name="google-site-verification" content="42XFdtBmr1w8i4mYrviWS84GvITiDbBbDNY6EU3aD0s"/>
+  <meta name="description" content="Connect with Laiq Ahmed Qureshi — Creative Director, Imagineer, founder of LaiqVerse."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--black:#0A0A0A;--dark:#111111;--card:#161616;--border:#222222;--orange:#E84A00;--orange-dim:#a33300;--orange-glow:rgba(232,74,0,0.12);--white:#FFFFFF;--muted:#888888;--tag-bg:#1a1a1a}
+    html{scroll-behavior:smooth}
+    body{background:var(--black);color:var(--white);font-family:'Inter',sans-serif;min-height:100vh}
+    header{border-bottom:1px solid var(--border);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:76px;position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(16px);z-index:100}
+    .logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+    .logo img{height:42px;width:auto;display:block}
+    .logo-text{display:flex;flex-direction:column;gap:2px}
+    .logo-name{font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--white)}
+    .logo-name span{color:var(--orange)}
+    .logo-tagline{font-size:10px;color:var(--muted);letter-spacing:0.06em;font-style:italic}
+    nav{display:flex;align-items:center;gap:4px}
+    nav a{font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:8px 14px;transition:color 0.2s}
+    nav a:hover,nav a.active{color:var(--orange)}
+    .hero{padding:80px 48px 64px;border-bottom:1px solid var(--border);position:relative;overflow:hidden;background:linear-gradient(180deg,#0d0d0d 0%,var(--black) 100%)}
+    .hero::before{content:'';position:absolute;top:-80px;right:-80px;width:560px;height:560px;background:radial-gradient(circle,var(--orange-glow) 0%,transparent 65%);pointer-events:none}
+    .hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--orange);margin-bottom:20px}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,72px);font-weight:900;line-height:0.95;color:var(--white);max-width:700px;margin-bottom:24px}
+    .hero h1 em{font-style:italic;color:var(--orange)}
+    .hero-sub{font-size:15px;color:var(--muted);max-width:460px;line-height:1.75}
+    .contact-body{max-width:860px;margin:0 auto;padding:64px 48px 80px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+    .contact-label{font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--orange);margin-bottom:20px}
+    .social-list{display:flex;flex-direction:column;gap:1px;background:var(--border)}
+    .social-item{background:var(--card);padding:20px 24px;display:flex;align-items:center;justify-content:space-between;text-decoration:none;transition:background 0.2s;gap:16px}
+    .social-item:hover{background:#1c1c1c}
+    .social-left{display:flex;flex-direction:column;gap:4px}
+    .social-platform{font-size:13px;font-weight:700;color:var(--white);letter-spacing:0.04em}
+    .social-handle{font-size:11px;color:var(--muted)}
+    .social-arrow{color:var(--orange);font-size:16px}
+    .info-block{display:flex;flex-direction:column;gap:24px}
+    .info-card{background:var(--card);border:1px solid var(--border);padding:24px}
+    .info-card-title{font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
+    .info-card-text{font-size:13px;color:#bbb;line-height:1.75}
+    .info-card-text a{color:var(--orange);text-decoration:none}
+    .info-card-text a:hover{text-decoration:underline}
+    footer{border-top:1px solid var(--border);padding:28px 48px;display:flex;align-items:center;justify-content:space-between;background:#0d0d0d}
+    .footer-left{display:flex;align-items:center;gap:14px}
+    .footer-logo{height:28px;width:auto;opacity:0.6}
+    .footer-brand{font-size:12px;color:var(--muted)}
+    .footer-brand strong{color:var(--orange)}
+    .footer-tagline{font-size:11px;color:var(--muted);font-style:italic}
+    @media(max-width:768px){header,footer{padding-left:20px;padding-right:20px}.contact-body{padding:40px 20px 60px;grid-template-columns:1fr}.footer-tagline{display:none}nav a{padding:8px 8px}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">
+      <img src="images/logo.png" alt="LaiqVerse Logo"/>
+      <div class="logo-text">
+        <div class="logo-name">Laiq<span>Verse</span> Prompts</div>
+        <div class="logo-tagline">I direct machines to imagine.</div>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">Library</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-eyebrow">Get In Touch</div>
+    <h1>Let's<br/><em>Connect.</em></h1>
+    <p class="hero-sub">Find me across platforms — I write, post, and share about AI, creativity, and the intersection of both.</p>
+  </section>
+
+  <div class="contact-body">
+    <div>
+      <div class="contact-label">Find Me Online</div>
+      <div class="social-list">
+        <a class="social-item" href="https://x.com/laiqverse" target="_blank">
+          <div class="social-left">
+            <span class="social-platform">X (Twitter)</span>
+            <span class="social-handle">@laiqverse</span>
+          </div>
+          <span class="social-arrow">&#8599;</span>
+        </a>
+        <a class="social-item" href="https://x.com/laiqqureshi" target="_blank">
+          <div class="social-left">
+            <span class="social-platform">X (Twitter)</span>
+            <span class="social-handle">@laiqqureshi</span>
+          </div>
+          <span class="social-arrow">&#8599;</span>
+        </a>
+        <a class="social-item" href="https://instagram.com/laiqqureshi" target="_blank">
+          <div class="social-left">
+            <span class="social-platform">Instagram</span>
+            <span class="social-handle">@laiqqureshi</span>
+          </div>
+          <span class="social-arrow">&#8599;</span>
+        </a>
+        <a class="social-item" href="https://linkedin.com/in/laiqqureshi" target="_blank">
+          <div class="social-left">
+            <span class="social-platform">LinkedIn</span>
+            <span class="social-handle">Laiq Ahmed Qureshi</span>
+          </div>
+          <span class="social-arrow">&#8599;</span>
+        </a>
+        <a class="social-item" href="https://laiqverse11.wordpress.com" target="_blank">
+          <div class="social-left">
+            <span class="social-platform">LaiqVerse Blog</span>
+            <span class="social-handle">laiqverse11.wordpress.com</span>
+          </div>
+          <span class="social-arrow">&#8599;</span>
+        </a>
+        <a class="social-item" href="https://pinterest.com/laiq1971" target="_blank">
+          <div class="social-left">
+            <span class="social-platform">Pinterest</span>
+            <span class="social-handle">laiq1971</span>
+          </div>
+          <span class="social-arrow">&#8599;</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="info-block">
+      <div class="info-card">
+        <div class="info-card-title">Based In</div>
+        <div class="info-card-text">Karachi, Pakistan<br/>Working globally.</div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-title">What I Do</div>
+        <div class="info-card-text">Creative Direction · Digital Strategy · AI Image Generation · Prompt Engineering · Branding · Editorial Design</div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-title">LaiqVerse Blog</div>
+        <div class="info-card-text">I write about AI, creativity, and human behaviour — not as tutorials, but as honest observations from someone watching the shift happen in real time.<br/><br/><a href="https://laiqverse11.wordpress.com" target="_blank">Read on WordPress &rarr;</a></div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-title">Prompt Vault</div>
+        <div class="info-card-text">My original prompt collection on WordPress:<br/><br/><a href="https://laiqverse11.wordpress.com/the-prompt-studio/" target="_blank">The Prompt Studio &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <img class="footer-logo" src="images/logo.png" alt="LaiqVerse"/>
+      <div class="footer-brand"><strong>LaiqVerse</strong> Prompt Library &middot; Karachi, Pakistan</div>
+    </div>
+    <div class="footer-tagline">"I direct machines to imagine."</div>
+  </footer>
+</body>
+</html>
