@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LaiqVerse Prompt Library</title>
-  <meta name="description" content="A curated library of AI image generation prompts by Laiq Ahmed Qureshi."/>
+  <meta name="description" content="A curated library of AI image generation prompts by Laiq Ahmed Qureshi — Imagineer, Creative Director."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
   <style>
@@ -17,7 +17,7 @@
     .logo-mark{width:36px;height:36px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:900;color:var(--black)}
     .logo-text{font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--white)}
     .logo-text span{color:var(--gold)}
-    .prompt-count{font-size:12px;color:var(--muted);letter-spacing:0.06em}
+    .prompt-count{font-size:12px;color:var(--muted)}
     .prompt-count strong{color:var(--gold)}
     .hero{padding:80px 48px 64px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
     .hero::before{content:'';position:absolute;top:-120px;right:-120px;width:480px;height:480px;background:radial-gradient(circle,rgba(201,168,76,0.08) 0%,transparent 70%);pointer-events:none}
@@ -38,40 +38,56 @@
     .grid-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
     .grid-label{font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted)}
     #resultsCount{font-size:12px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1px;background:var(--border)}
-    .card{background:var(--card);padding:32px;display:flex;flex-direction:column;gap:16px;transition:background 0.2s}
-    .card:hover{background:#1a1a1a}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1px;background:var(--border)}
+    .card{background:var(--card);display:flex;flex-direction:column;transition:background 0.2s;cursor:pointer}
+    .card:hover{background:#1c1c1c}
+    .card-image{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#111}
+    .card-no-img{aspect-ratio:4/3;background:linear-gradient(135deg,#111 0%,#1a1a1a 100%);display:flex;align-items:center;justify-content:center}
+    .card-no-img-letter{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:var(--gold-dim)}
+    .card-body{padding:24px;display:flex;flex-direction:column;gap:12px;flex:1}
     .card-tags{display:flex;gap:6px;flex-wrap:wrap}
     .tag{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--border);color:var(--muted)}
     .tag.tool{border-color:var(--gold-dim);color:var(--gold)}
-    .card-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;line-height:1.3;color:var(--white)}
-    .card-prompt{font-size:13px;color:#aaaaaa;line-height:1.7;flex:1;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
-    .card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid var(--border)}
-    .card-meta{font-size:11px;color:var(--muted);letter-spacing:0.04em}
+    .card-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;line-height:1.3;color:var(--white)}
+    .card-prompt{font-size:12px;color:#999;line-height:1.7;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+    .card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid var(--border);margin-top:auto}
+    .card-meta{font-size:11px;color:var(--muted)}
     .copy-btn{background:transparent;border:1px solid var(--border);color:var(--muted);padding:7px 16px;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s}
     .copy-btn:hover{background:var(--gold);border-color:var(--gold);color:var(--black)}
     .copy-btn.copied{background:#1a3a1a;border-color:#2ECC71;color:#2ECC71}
+    .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:200;align-items:center;justify-content:center;padding:24px}
+    .modal-overlay.open{display:flex}
+    .modal{background:var(--dark);border:1px solid var(--border);max-width:760px;width:100%;max-height:90vh;overflow-y:auto}
+    .modal-img{width:100%;max-height:400px;object-fit:cover;display:block}
+    .modal-body{padding:32px;display:flex;flex-direction:column;gap:20px}
+    .modal-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:900;color:var(--white)}
+    .modal-tags{display:flex;gap:8px;flex-wrap:wrap}
+    .modal-prompt-label{font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)}
+    .modal-prompt{font-size:13px;color:#bbb;line-height:1.8}
+    .modal-actions{display:flex;gap:12px;padding-top:8px;border-top:1px solid var(--border)}
+    .modal-copy{background:var(--gold);border:none;color:var(--black);padding:12px 28px;font-size:12px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:opacity 0.2s}
+    .modal-copy:hover{opacity:0.85}
+    .modal-copy.copied{background:#2ECC71}
+    .modal-close{background:transparent;border:1px solid var(--border);color:var(--muted);padding:12px 20px;font-size:12px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s}
+    .modal-close:hover{border-color:var(--muted);color:var(--white)}
     .empty-state{grid-column:1/-1;background:var(--card);padding:80px 48px;text-align:center}
     .empty-state p{color:var(--muted);font-size:14px}
     footer{border-top:1px solid var(--border);padding:32px 48px;display:flex;align-items:center;justify-content:space-between}
     .footer-brand{font-size:12px;color:var(--muted)}
     .footer-brand strong{color:var(--gold)}
-    .footer-tagline{font-size:11px;color:var(--muted);letter-spacing:0.08em;font-style:italic}
-    @media(max-width:768px){header,.hero,.controls,.grid-section,footer{padding-left:24px;padding-right:24px}.grid{grid-template-columns:1fr}.hero{padding-top:48px}}
+    .footer-tagline{font-size:11px;color:var(--muted);font-style:italic}
+    @media(max-width:768px){header,.hero,.controls,.grid-section,footer{padding-left:24px;padding-right:24px}.grid{grid-template-columns:1fr}.hero{padding-top:48px}.modal-body{padding:20px}}
   </style>
 </head>
 <body>
   <header>
-    <a class="logo" href="#">
-      <div class="logo-mark">L</div>
-      <div class="logo-text">Laiq<span>Verse</span> Prompts</div>
-    </a>
+    <a class="logo" href="#"><div class="logo-mark">L</div><div class="logo-text">Laiq<span>Verse</span> Prompts</div></a>
     <span class="prompt-count"><strong id="totalCount">0</strong> prompts</span>
   </header>
   <section class="hero">
     <div class="hero-eyebrow">Prompt Library &middot; By Laiq Ahmed Qureshi</div>
     <h1>I Direct<br/><em>Machines</em><br/>to Imagine.</h1>
-    <p class="hero-sub">A curated collection of AI image generation prompts &mdash; cinematic, editorial, dark luxury. Copy any prompt and use it in your favourite AI tool.</p>
+    <p class="hero-sub">A curated collection of AI image generation prompts &mdash; cinematic, editorial, dark luxury. Click any card to read the full prompt and copy it.</p>
   </section>
   <div class="controls">
     <div class="search-wrap">
@@ -93,32 +109,41 @@
     <div class="footer-brand"><strong>LaiqVerse</strong> Prompt Library &middot; Karachi, Pakistan</div>
     <div class="footer-tagline">"I direct machines to imagine."</div>
   </footer>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <img class="modal-img" id="modalImg" src="" alt=""/>
+      <div class="modal-body">
+        <div class="modal-tags" id="modalTags"></div>
+        <div class="modal-title" id="modalTitle"></div>
+        <div class="modal-prompt-label">Full Prompt</div>
+        <div class="modal-prompt" id="modalPrompt"></div>
+        <div class="modal-actions">
+          <button class="modal-copy" id="modalCopyBtn">Copy Prompt</button>
+          <button class="modal-close" id="modalCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script>
-    let allPrompts=[];
-    let activeFilter='all';
+    let allPrompts=[],activeFilter='all';
     async function loadPrompts(){
       const res=await fetch('prompts/prompts.json');
       allPrompts=await res.json();
       document.getElementById('totalCount').textContent=allPrompts.length;
-      buildFilters();
-      render();
+      buildFilters();render();
     }
     function buildFilters(){
-      const tools=[...new Set(allPrompts.map(p=>p.tool))].sort();
+      const cats=[...new Set(allPrompts.map(p=>p.category))].sort();
       const group=document.getElementById('filterGroup');
-      tools.forEach(tool=>{
+      cats.forEach(cat=>{
         const btn=document.createElement('button');
-        btn.className='filter-btn';
-        btn.dataset.filter=tool;
-        btn.textContent=tool;
+        btn.className='filter-btn';btn.dataset.filter=cat;btn.textContent=cat;
         group.appendChild(btn);
       });
       group.addEventListener('click',e=>{
         if(!e.target.classList.contains('filter-btn'))return;
         document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-        e.target.classList.add('active');
-        activeFilter=e.target.dataset.filter;
-        render();
+        e.target.classList.add('active');activeFilter=e.target.dataset.filter;render();
       });
     }
     function render(){
@@ -126,30 +151,48 @@
       const grid=document.getElementById('promptGrid');
       grid.innerHTML='';
       const filtered=allPrompts.filter(p=>{
-        const matchFilter=activeFilter==='all'||p.tool===activeFilter;
-        const matchSearch=!query||p.title.toLowerCase().includes(query)||p.prompt.toLowerCase().includes(query)||p.category.toLowerCase().includes(query)||p.tool.toLowerCase().includes(query);
-        return matchFilter&&matchSearch;
+        const mf=activeFilter==='all'||p.category===activeFilter;
+        const ms=!query||p.title.toLowerCase().includes(query)||p.prompt.toLowerCase().includes(query)||p.category.toLowerCase().includes(query)||p.tool.toLowerCase().includes(query);
+        return mf&&ms;
       });
       document.getElementById('resultsCount').textContent=filtered.length+' of '+allPrompts.length;
-      if(filtered.length===0){
-        grid.innerHTML='<div class="empty-state"><p>No prompts match your search. Try different keywords.</p></div>';
-        return;
-      }
+      if(filtered.length===0){grid.innerHTML='<div class="empty-state"><p>No prompts match your search.</p></div>';return;}
       filtered.forEach(p=>{
-        const card=document.createElement('div');
-        card.className='card';
-        card.innerHTML=`<div class="card-tags"><span class="tag tool">${p.tool}</span><span class="tag">${p.category}</span></div><div class="card-title">${p.title}</div><div class="card-prompt">${p.prompt}</div><div class="card-footer"><span class="card-meta">LaiqVerse &middot; ${p.date}</span><button class="copy-btn" data-prompt="${encodeURIComponent(p.prompt)}">Copy</button></div>`;
-        grid.appendChild(card);
-      });
-      grid.querySelectorAll('.copy-btn').forEach(btn=>{
-        btn.addEventListener('click',()=>{
+        const card=document.createElement('div');card.className='card';
+        const imgHtml=p.image
+          ?`<img class="card-image" src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.parentNode.innerHTML='<div class=\\"card-no-img\\"><span class=\\"card-no-img-letter\\">L</span></div>'">`
+          :`<div class="card-no-img"><span class="card-no-img-letter">L</span></div>`;
+        card.innerHTML=`${imgHtml}<div class="card-body"><div class="card-tags"><span class="tag tool">${p.tool}</span><span class="tag">${p.category}</span></div><div class="card-title">${p.title}</div><div class="card-prompt">${p.prompt}</div><div class="card-footer"><span class="card-meta">LaiqVerse &middot; ${p.date}</span><button class="copy-btn" data-prompt="${encodeURIComponent(p.prompt)}">Copy</button></div></div>`;
+        card.addEventListener('click',e=>{if(e.target.classList.contains('copy-btn'))return;openModal(p);});
+        card.querySelector('.copy-btn').addEventListener('click',e=>{
+          e.stopPropagation();const btn=e.target;
           navigator.clipboard.writeText(decodeURIComponent(btn.dataset.prompt));
-          btn.textContent='Copied';
-          btn.classList.add('copied');
+          btn.textContent='Copied';btn.classList.add('copied');
           setTimeout(()=>{btn.textContent='Copy';btn.classList.remove('copied');},2000);
         });
+        grid.appendChild(card);
       });
     }
+    function openModal(p){
+      const img=document.getElementById('modalImg');
+      if(p.image){img.src=p.image;img.style.display='block';}else{img.style.display='none';}
+      document.getElementById('modalTitle').textContent=p.title;
+      document.getElementById('modalPrompt').textContent=p.prompt;
+      document.getElementById('modalTags').innerHTML=`<span class="tag tool">${p.tool}</span><span class="tag">${p.category}</span>`;
+      const cb=document.getElementById('modalCopyBtn');
+      cb.textContent='Copy Prompt';cb.classList.remove('copied');
+      cb.onclick=()=>{
+        navigator.clipboard.writeText(p.prompt);
+        cb.textContent='Copied';cb.classList.add('copied');
+        setTimeout(()=>{cb.textContent='Copy Prompt';cb.classList.remove('copied');},2000);
+      };
+      document.getElementById('modalOverlay').classList.add('open');
+      document.body.style.overflow='hidden';
+    }
+    function closeModal(){document.getElementById('modalOverlay').classList.remove('open');document.body.style.overflow='';}
+    document.getElementById('modalCloseBtn').addEventListener('click',closeModal);
+    document.getElementById('modalOverlay').addEventListener('click',e=>{if(e.target===document.getElementById('modalOverlay'))closeModal();});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
     document.getElementById('searchInput').addEventListener('input',render);
     loadPrompts();
   </script>

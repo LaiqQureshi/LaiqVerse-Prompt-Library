@@ -1,66 +1,110 @@
 [
   {
     "id": 1,
-    "title": "Cinematic Male Portrait — Dark Studio",
-    "tool": "Midjourney",
-    "category": "Portrait",
+    "title": "Sketchbook Portrait — Grunge Realism",
+    "tool": "Gemini",
+    "category": "Illustration",
+    "image": "images/laiqverse42.png",
     "date": "2026",
-    "prompt": "Close-up cinematic portrait of a South Asian man in his 40s, strong directional side-lighting from the left, deep shadow on right side of face, wearing a dark navy suit, contemplative expression, 85mm lens, shallow depth of field, dark studio background, fine grain film texture, deep navy shadows with gold rim light, magazine editorial quality, premium print finish, cinematic depth. Not AI-looking."
+    "prompt": "Ultra-detailed semi-realistic portrait illustration blending melancholic grunge realism with expressive sketchbook fashion art, combining cinematic soft-rendered facial realism and spontaneous hand-drawn ink energy, delicate painterly skin texture with visible pores and subtle blush transitions, luminous pale skin tones mixed with warm earthy beige and dusty peach palette, layered loose sketch lines around the silhouette and clothing, unfinished spontaneous strokes, controlled chaotic linework, rough editorial illustration aesthetic, soft airbrush shading fused with dry brush textures, flowing wispy hair rendered in hyper-detailed strands with painterly highlights, expressive eyes with emotional depth, natural lips with glossy muted tones, realistic anatomy softened by artistic stylization, semi-abstract clothing folds with scribbled contour accents, textured recycled paper background mixed with dark vignette atmosphere, muted monochromatic neutrals, warm cream, taupe, dusty brown, ash gray, faded charcoal, subtle white paint smears and raw brush patches, elegant balance between polished realism and raw sketch imperfection, cinematic moody lighting, soft diffused shadows, high-detail portrait focus, fashion editorial meets emotional fine art illustration, layered mixed-media aesthetic, ink scratches, graphite gestures, acrylic wash textures, modern contemporary portrait art, organic imperfect composition, emotionally intimate atmosphere, premium gallery-quality digital painting."
   },
   {
     "id": 2,
-    "title": "AI Brain — Editorial Concept",
+    "title": "Vintage Engraving — Trump Portrait",
     "tool": "Gemini",
-    "category": "Editorial",
+    "category": "Engraving",
+    "image": "images/trumpbylaiqverse.png",
     "date": "2026",
-    "prompt": "Editorial concept illustration of a human brain composed entirely of glowing circuit lines and data nodes, floating against a deep black background, electric blue and gold accent colors, dramatic spotlight from above, fine crosshatching texture overlay, hyper-detailed, cinematic depth of field, magazine cover quality, premium editorial illustration style. Not AI-looking."
+    "prompt": "Style transfer — Vintage financial engraving / Money portrait illustration. Medium: Intaglio woodcut and steel-plate scratchboard engraving. Color palette: Strictly monochrome, pure black ink on crisp white background. Lighting: High-contrast dramatic portrait lighting rendered entirely through line thickness variation. Precision cross-hatching, fine stippling, and continuous concentric contour lines. Smooth micro-fine parallel curved lines wrapping around facial geometry to create realistic 3D volume, depth, and skin tone transitions. Flowing crisp high-contrast black and white linework defining individual locks, highlights, and deep shadows. Clean portrait cut-out isolated against stark pure white background. Sharp, clean, sophisticated, tactile, highly detailed asset graphic. Watermark: LAIQVERSE — bottom right corner, microscopic, ultra-thin, low-opacity sans-serif."
   },
   {
     "id": 3,
-    "title": "Dark Luxury Office — Creative Director",
-    "tool": "Midjourney",
-    "category": "Lifestyle",
+    "title": "Vintage Engraving — Khamenei Portrait",
+    "tool": "Gemini",
+    "category": "Engraving",
+    "image": "images/khamnaibylaiqverse.png",
     "date": "2026",
-    "prompt": "Wide cinematic shot of a dark luxury creative office, deep navy walls, gold desk lamp casting warm pool of light, large monitor with design work visible, leather chair, bokeh city lights through floor-to-ceiling window at night, 35mm lens, anamorphic flare, editorial interior photography style, deep shadows with gold and blue highlights, premium architectural digest quality. Not AI-looking."
+    "prompt": "Style transfer — Vintage financial engraving / Money portrait illustration. Medium: Intaglio woodcut and steel-plate scratchboard engraving. Color palette: Strictly monochrome, pure black ink on crisp white background. Precision cross-hatching, fine stippling, and continuous concentric contour lines. Smooth micro-fine parallel curved lines wrapping around facial geometry to create realistic 3D volume, depth, and skin tone transitions. Clean portrait cut-out isolated against stark pure white background. Sharp, clean, sophisticated, tactile, highly detailed asset graphic."
   },
   {
     "id": 4,
-    "title": "Abstract AI Identity — Fractured Self",
-    "tool": "Flux",
-    "category": "Abstract",
+    "title": "Ink Portrait — Pope Francis",
+    "tool": "Gemini",
+    "category": "Ink Portrait",
+    "image": "images/pope2bylaiqverse.png",
     "date": "2026",
-    "prompt": "Abstract surrealist portrait of a human figure dissolving into cascading lines of code and light particles, half-human half-digital, dramatic high-contrast lighting, electric blue and gold color palette against deep black void, 50mm center composition, rule of thirds, fine grain texture, cinematic mood, philosophical and contemplative tone, museum-worthy surrealist artwork. Not AI-looking."
+    "prompt": "Transform the input photo into a refined monochromatic ink portrait on a pure white background. Clean side profile facing left, preserving exact facial identity and proportions. Soft charcoal-gray ink with subtle tonal variation, controlled splatter accents, delicate watercolor diffusion, and faint mist-like dispersion along the edges. No signature, no typography. Do not change the face features."
   },
   {
     "id": 5,
-    "title": "Typography Poster — Manifesto Style",
-    "tool": "Ideogram",
-    "category": "Typography",
+    "title": "Vintage Engraving — Ornate Teal Series",
+    "tool": "Gemini",
+    "category": "Engraving",
+    "image": "images/laiqverse43.png",
     "date": "2026",
-    "prompt": "Editorial typographic poster design, bold serif headline reading I Direct Machines To Imagine in large confident white type on deep black background, gold accent underline on key phrase, minimal layout with generous negative space, slight paper texture overlay, premium print quality, magazine manifesto aesthetic, Bauhaus-inspired editorial structure. Not AI-looking."
+    "prompt": "Style: Vintage engraving, intricate linework, ornate woodcut illustration, detailed cross-hatching. Subject integration: Central portrait framing, high-contrast subjects seamlessly blended with decorative patterns. Texture and patterns: Elaborate filigree, baroque scrollwork, stylized swirling patterns mimicking fur or clothing texture, dense linocut detailing. Color palette background: Deep teal, muted turquoise with subtle damask pattern overlay. Main subject: Monochromatic cream, off-white, and charcoal black. Accent: Vibrant high-saturation orange-red on a single prominent accessory. Lighting: Dramatic chiaroscuro, stark contrast between deep black shadows and bright cream highlights. Composition: Symmetrical, tight close-up portrait, bold vector-like outlines, graphic design poster aesthetic. Mood: Cool, edgy, retro-modern, stylishly surreal."
   },
   {
     "id": 6,
-    "title": "Karachi Cityscape — Cinematic Night",
-    "tool": "Midjourney",
-    "category": "Cityscape",
+    "title": "Caricature — Sketchbook Style with Glasses",
+    "tool": "Gemini",
+    "category": "Caricature",
+    "image": "images/laiqverse45.png",
     "date": "2026",
-    "prompt": "Cinematic wide-angle night shot of Karachi skyline from a rooftop, golden streetlights reflecting on wet roads below, distant sea horizon, dramatic storm clouds with silver lining, anamorphic lens flare, 24mm ultra-wide, long exposure light trails from traffic, deep navy sky with electric blue cloud highlights, editorial travel photography quality, National Geographic cinematic grade. Not AI-looking."
+    "prompt": "Use the uploaded image only as the identity anchor. Create a highly detailed hand-drawn caricature portrait in a premium sketchbook illustration style, humorously exaggerating distinctive features with an oversized head, elongated neck, enlarged black thick-rimmed eyeglasses, slightly exaggerated ears, stretched facial proportions, expressive eyebrows, and subtle asymmetry for realism. Expression: mildly skeptical, intellectual, unimpressed, with a dry sense of humor. Render as ultra-detailed pen-and-ink drawing blended with watercolor washes, featuring fine ink cross-hatching, scribbled sketch lines, visible construction marks, artist notebook illustration aesthetics, watercolor splashes, and mixed-media concept art energy. Hair slightly messy with loose sketch strokes. Background: aged sketchbook paper with subtle coffee stains, ink splatters, watercolor blotches. Warm, muted palette of paper tones, watercolor browns, sepia ink. Museum-quality editorial caricature illustration suitable for a professional magazine. Ultra-high 8K detail."
   },
   {
     "id": 7,
-    "title": "Prompt Engineer — Character Study",
+    "title": "MJ and Freddie — Museum Caricature Portrait",
     "tool": "Gemini",
-    "category": "Portrait",
+    "category": "Caricature",
+    "image": "images/laiq-ahmed-qureshi-laiqverse-mj-freddie-art.jpg` .png",
     "date": "2026",
-    "prompt": "Character study portrait of a creative technologist, South Asian male, 40s, seated at a glowing terminal in a dark room, face illuminated by blue monitor light, surrounded by floating holographic text fragments, glasses reflecting code, contemplative and focused expression, 85mm portrait lens, cinematic depth of field, editorial storytelling composition, TIME magazine cover quality. Not AI-looking."
+    "prompt": "Create a museum-grade ultra-detailed hybrid caricature portrait featuring Michael Jackson and Freddie Mercury with maximum identity fidelity. Caricature proportions: heads enlarged 15-20%, torsos compacted 20-25%, legs shortened 25-30%. Vertical 9:16 composition. Michael Jackson casually leaning against a modified matte-beige off-road Volkswagen Beetle. Wearing black leather jacket with multi-strap buckle accents over white T-shirt, black leather pants, polished black leather boots. Freddie Mercury seated in worn brown leather Chesterfield armchair — yellow military-style jacket, white T-shirt, white trousers with red and gold side stripes. Rendered as master-level handcrafted illustration blending Renaissance fine portraiture, expressive watercolor painting, and delicate ink sketchwork. Background: dreamy abstract watercolor cityscape on textured parchment with street-art elements — black ink splashes, paint blooms in red, orange, and teal with organic drip textures."
   },
   {
     "id": 8,
-    "title": "Ink and Data — Editorial Illustration",
-    "tool": "Recraft",
-    "category": "Illustration",
+    "title": "Double Exposure — Cinematic Portrait",
+    "tool": "Gemini",
+    "category": "Double Exposure",
+    "image": "images/hamidmirbylaiqverse.png",
     "date": "2026",
-    "prompt": "Premium editorial illustration combining traditional ink drawing and digital data visualization, pen-and-ink crosshatching style depicting a human hand reaching toward a stream of golden data particles, archival ink texture, graphite shading, watercolor wash in deep navy and gold, white paper background, fine art illustration quality, New Yorker magazine editorial standard. Not AI-looking."
+    "prompt": "Use the uploaded image as the ONLY identity reference with maximum facial preservation. Create a high-contrast cinematic double-exposure editorial portrait featuring the subject as a bearded man with a deep, introspective, downward-looking expression. Construct the portrait using multiple irregular vertical segmented slices of varying widths and heights. Inside selected facial slices, integrate a secondary cinematic narrative scene using seamless double-exposure blending: a lonely hooded figure walking through a rain-soaked urban night street illuminated by soft neon reflections, wet pavement glow, cinematic rain streaks, atmospheric fog, subtle mist, urban reflections, and emotional environmental storytelling. Lighting: cinematic, dramatic, moody, editorial. Grayscale tonality mixed with muted cinematic blues, silver undertones, soft charcoal shadows, and restrained warm highlights. Museum-grade digital compositing, ultra-detailed 8K fine-art realism."
+  },
+  {
+    "id": 9,
+    "title": "Guitar Caricature — Sepia Character Series",
+    "tool": "Gemini",
+    "category": "Caricature",
+    "image": "images/imranbylaiqverse.jpg",
+    "date": "2026",
+    "prompt": "A highly detailed digital caricature illustration in a warm sepia and brown-toned palette, featuring a skinny young man with an exaggeratedly large head and stylized proportions, playing an acoustic guitar. Messy, voluminous, windswept dark brown hair dramatically piled up on top of his head with loose strands flying around. Face strongly caricatured: oversized nose, squinted closed eyes with heavy expressive brows, prominent full lips, and a cigarette dangling from the side of his mouth. Wearing a loose, slightly unbuttoned collared shirt in earthy brown tones. Dynamic pose: left hand pressing chords on guitar neck, right hand strumming strings. Painterly digital art style with visible expressive brush strokes, soft lighting, dramatic highlights, subtle watercolor-like blending, clean off-white cream background with faint abstract watercolor washes."
+  },
+  {
+    "id": 10,
+    "title": "Watercolor and Ink — Museum Portrait Series",
+    "tool": "Gemini",
+    "category": "Watercolor",
+    "image": "images/laiqbylaiqverse1.png",
+    "date": "2026",
+    "prompt": "Transform the uploaded image into a museum-quality expressive watercolor and ink portrait preserving the subject's exact identity, facial structure, expression, pose, and all defining characteristics without alteration. Create the artwork in the style of a master contemporary watercolor illustrator using authentic traditional mixed-media techniques on premium cold-press watercolor paper. Blend expressive watercolor painting, loose urban sketching, fine ink drawing, gestural mark-making, spontaneous brushwork, and abstract artistic storytelling. The face remains the primary focal point with recognizable realism, while surrounding areas gradually dissolve into elegant abstraction. Restrained fine-art palette: charcoal black, warm earth browns, sepia, muted gray, beige, with selective accents of crimson red, burnt orange, dusty blue, muted yellow emerging organically through watercolor splashes."
+  },
+  {
+    "id": 11,
+    "title": "Archival Ink — Editorial Illustration",
+    "tool": "Gemini",
+    "category": "Ink Portrait",
+    "image": "images/imranbylaiqverse1.jpg",
+    "date": "2026",
+    "prompt": "Transform the uploaded image into a museum-quality handcrafted editorial illustration featuring the main subject only. Created by an expert traditional illustrator using archival ink, pen-and-nib crosshatching, graphite detailing, and subtle watercolor wash techniques on aged fine-art paper. Preserve the exact identity, facial structure, expression, pose, and all unique characteristics including clothing and accessories. The composition must feel entirely hand-drawn through thousands of organically flowing ink strokes, layered crosshatching, contour lines, sketch marks, and stippling. Apply subtle sepia-toned watercolor stains, paper aging effects, ink splatters, and coffee-wash textures throughout the background. Final illustration should feel like a rare collector's edition artwork from a high-end art journal."
+  },
+  {
+    "id": 12,
+    "title": "3D Editorial Caricature — Gouache Series",
+    "tool": "Gemini",
+    "category": "Caricature",
+    "image": "images/laiqbylaiqverse2.png",
+    "date": "2026",
+    "prompt": "Premium 3D digital caricature and editorial illustration style. Exaggerated proportions: stylized, slightly oversized head relative to the torso to emphasize vibrant expressive personality. Facial features dynamically emphasized while preserving unmistakable likeness. Art Style: Handcrafted digital painting with the texture of fine gouache and smooth watercolor washes. Visible, deliberate brushstrokes define the contours of the face, clothing, and hair — tactile quality of a physical art piece. No flat, plastic, or synthetic AI gradients. High-end editorial magazine caricature style. Lighting: Warm, luminous three-quarter Rembrandt lighting casting a soft glow across skin tones with rich dimensional highlights and deep warm shadows. Vibrant saturated color palette featuring rich ochres, warm skin undertones, and clean whites against a crisp solid white background. Masterpiece, ultra-high fidelity, 8K resolution, editorial illustration art."
   }
 ]
